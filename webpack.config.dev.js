@@ -17,6 +17,14 @@ module.exports = {
     stats: 'minimal',
     contentBase: publicPath
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [ 'style-loader', 'css-loader' ]
+      }
+    ]
+  },
   devtool: 'cheap-eval-source-map',
   plugins: [
     new HtmlWebpackPlugin({template: './public/index.html'})
