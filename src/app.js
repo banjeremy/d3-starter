@@ -1,3 +1,1 @@
-import hello from './hello';
-
-hello();
+import * as d3 from "d3";
